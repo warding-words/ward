@@ -166,7 +166,7 @@ const input_binary = computed(() => {
       <span
         >Word Count: {{ input.split(" ").filter((elm) => elm !== "").length }} |
         Character Count: {{ input.length }}</span
-      >
+      ><!--
       <span
         >Created by
         the
@@ -182,7 +182,7 @@ const input_binary = computed(() => {
         <a href="https://github.com/notessentialsite/translator/releases"
           >GitHub releases.</a
         ></span
-      >
+      >-->
     </div>
   </main>
 </template>
