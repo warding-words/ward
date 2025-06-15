@@ -172,7 +172,7 @@ const input_binary = computed(() => {
       <span
         >Word Count: {{ input.split(" ").filter((elm) => elm !== "").length }} |
         Character Count: {{ input.length }}</span
-      ><
+      >
       <span
         >Created by
         WorldWidePixel and maintained by 
