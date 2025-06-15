@@ -172,12 +172,13 @@ const input_binary = computed(() => {
       <span
         >Word Count: {{ input.split(" ").filter((elm) => elm !== "").length }} |
         Character Count: {{ input.length }}</span
-      ><!--
+      ><
       <span
         >Created by
-        the
-        <a href="https://notessential.blurry.gay/">NotEssential</a> team</span
+        WorldWidePixel and maintained by 
+        <a href="https://github.com/warding-words/">Warding Words</a></span
       >
+      <!--
       <span
         >Inspired by <a href="https://github.com/notessential/translator"
           ><code>notessential/translator</code></a
