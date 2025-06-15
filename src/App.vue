@@ -5,6 +5,7 @@ import maps from "./assets/maps.json";
 
 const regular = maps.regular;
 const ud_map = maps.upside_down;
+const udmc_map = maps.upside_down_mc;
 const enchant = maps.enchant;
 const leet = maps.leet;
 const zalgo_characters = maps.zalgo_characters;
@@ -31,6 +32,10 @@ const input = ref("");
 
 const input_ud = computed(() => {
   return cypher(ud_map).reverse().join("");
+});
+
+const input_udmc = computed(() => {
+  return cypher(udmc_map).reverse().join("");
 });
 
 const input_enchant = computed(() => {
@@ -151,6 +156,7 @@ const input_binary = computed(() => {
       <ul>
         <li>Original Input: {{ input }}</li>
         <li>Upside Down: {{ input_ud }}</li>
+        <li>Upside Down (Minecraft-compatible): {{ input_udmc }}</li>
         <li>Enchanted: {{ input_enchant }}</li>
         <li>Uppercase: {{ input.toUpperCase() }}</li>
         <li>Lowercase: {{ input.toLowerCase() }}</li>
